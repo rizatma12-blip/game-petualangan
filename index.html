@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Pertama Saya</title>
+</head>
+<body>
+    <h1>Game Pertama Saya</h1>
+
+    <button onclick="skor++">
+        Tambah Skor
+    </button>
+
+    <p>Skor: <span id="nilai">0</span></p>
+
+    <script>
+        let skor = 0;
+
+        setInterval(() => {
+            document.getElementById("nilai").innerText = skor;
+        }, 100);
+    </script>
+</body>
+</html>
